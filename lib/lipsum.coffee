@@ -31,7 +31,7 @@ module.exports =
             type: 'array'
             title: 'HTML Extensions'
             description: "List any extensions that should be wrapped in HTML code when generating Lipsum."
-            default: [".html", ".htm", ".blade.php", ".twig", ".tpl"]
+            default: [".html", ".htm", ".php", ".twig", ".tpl"]
             items:
                 type: 'string'
 

@@ -71,7 +71,8 @@ extensions for HTML file types.
 The default values are:
 - .html
 - .htm (does anyone still use this?)
-- .blade.php (Laravel blade templates)
+- .php (I'm not sure whether this should be included here or not, but you can
+override it if you want to)
 - .twig (Twig templates)
 - .tpl (Smarty templates)
 
