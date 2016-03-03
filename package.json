@@ -1,0 +1,24 @@
+{
+    "name": "lipsum",
+    "main": "./lib/lipsum",
+    "version": "0.0.0",
+    "description": "Generate lorem ipsum placeholder text in your Atom editor.",
+    "keywords": [
+        "lorem", "ipsum", "lipsum", "text", "dummy", "generator", "placeholder"
+    ],
+    "activationCommands": {
+        "atom-workspace": [
+			"lipsum:paragraph",
+            "lipsum:paragraphs",
+			"lipsum:sentence"
+        ]
+    },
+    "repository": "https://github.com/paulhorner79/atom-lipsum",
+    "license": "MIT",
+    "engines": {
+        "atom": ">=1.0.0 <2.0.0"
+    },
+    "dependencies": {
+		"lorem-ipsum": "~1.0"
+    }
+}
