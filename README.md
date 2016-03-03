@@ -57,7 +57,7 @@ number of sentences.
 
 The default is 8.
 
-#### Minimum sentences per sentence'
+#### Minimum sentences per paragraph
 When generating content, any paragraph created will have at least than this
 number of sentences.  
 
