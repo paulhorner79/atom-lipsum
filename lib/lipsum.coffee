@@ -19,6 +19,10 @@ module.exports =
             type: 'integer'
             title: 'Minimum words per sentence'
             default: 8
+        startWithLipsum:
+            type: 'boolean'
+            title: 'Start with Lorem Ipsum...'
+            default: false
         maxPerParagraph:
             type: 'integer'
             title: 'Maximum sentences per paragraph'
@@ -48,6 +52,8 @@ module.exports =
             if ext and ext in extensions
                 items.format = 'html'
             output = loremIpsum(items)
+            if atom.config.get 'lipsum.startWithLipsum'
+                output = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ' + output
             editor.insertText(output)
         else
             alert('You can only insert text into an active text editor.')
