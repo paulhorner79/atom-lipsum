@@ -53,7 +53,7 @@ module.exports =
                 items.format = 'html'
             output = loremIpsum(items)
             if atom.config.get 'lipsum.startWithLipsum'
-                output = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' + output
+                output = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ' + output
             editor.insertText(output)
         else
             alert('You can only insert text into an active text editor.')
